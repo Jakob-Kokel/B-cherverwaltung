@@ -25,7 +25,7 @@ Mariadb DB erstellen:
     1. Frage: <Dein Mariadb Root-Passwd. von eben>
 
 		CREATE DATABASE <Name>;
-		CREATE USER 'Voc-User'@'localhost' IDENTIFIED BY
+		CREATE USER '<User>'@'localhost' IDENTIFIED BY
     '<Passwort>';	
 		GRANT ALL PRIVILEGES ON Vocabulary.* TO '<User-Name>'@'localhost';
 		USE <Name>;
