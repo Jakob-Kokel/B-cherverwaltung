@@ -7,30 +7,30 @@ Resourcen:
 
 Mariadb einrichten:
 
-	sudo mysql_secure_installation:
+	sudo mysql_secure_installation
 		
-		1. Frage: <Dein Mariadb root Passwd.>
-		2. Frage: No
-		3. Frage: No
-		4. Frage: Yes
-		5. Frage: Yes
-		6. Frage: Yes
-		7. Frage: Yes
+1. Frage: <Dein Mariadb root Passwd.>
+2. Frage: No
+3. Frage: No
+4. Frage: Yes
+5. Frage: Yes
+6. Frage: Yes
+7. Frage: Yes
 
 
 Mariadb DB erstellen:
 	
 	sudo mysql -u root -p:
 		
-    1. Frage: <Dein Mariadb Root-Passwd. von eben>
+1. Frage: <Dein Mariadb Root-Passwd. von eben>:
 
 		CREATE DATABASE <Name>;
 		CREATE USER '<User>'@'localhost' IDENTIFIED BY
-    '<Passwort>';	
+    		'<Passwort>';	
 		GRANT ALL PRIVILEGES ON Vocabulary.* TO '<User-Name>'@'localhost';
 		USE <Name>;
 		CREATE TABLE Voc (ger VARCHAR(100), lang2
-    VARCHAR(100));
+    		VARCHAR(100));
 		FLUSH PRIVILEGES;
 		EXIT;
 
@@ -55,7 +55,10 @@ Apache2 konfig:
     		ErrorLog ${APACHE_LOG_DIR}/error.log
     		CustomLog ${APACHE_LOG_DIR}/access.log combined
 	</VirtualHost>
-	
+
+
+Konfig Updaten:
+
 	sudo a2ensite <Name>
 	sudo a2enmod rewrite headers env dir mime
 	sudo systemctl restart apache2
