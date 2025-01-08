@@ -9,7 +9,7 @@ Mariadb einrichten:
 
 	sudo mysql_secure_installation
 		
-1. Frage: <Dein Mariadb root Passwd.>
+1. Frage: "Dein Mariadb root Passwd."
 2. Frage: No
 3. Frage: No
 4. Frage: Yes
@@ -21,7 +21,8 @@ Mariadb einrichten:
 Mariadb DB erstellen:
 	
 	sudo mysql -u root -p:
-		
+
+1. Frage: "Passwort von eben" 		
 
 		CREATE DATABASE <Name>;
 		CREATE USER '<User>'@'localhost' IDENTIFIED BY
