@@ -22,7 +22,6 @@ Mariadb DB erstellen:
 	
 	sudo mysql -u root -p:
 		
-1. Frage: <Dein Mariadb Root-Passwd. von eben>:
 
 		CREATE DATABASE <Name>;
 		CREATE USER '<User>'@'localhost' IDENTIFIED BY
