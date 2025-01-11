@@ -29,7 +29,7 @@ Mariadb DB erstellen:
     		'<Passwort>';	
 		GRANT ALL PRIVILEGES ON <Name>.* TO '<User-Name>'@'localhost';
 		USE <Name>;
-		CREATE TABLE mediums (Autor VARCHAR(100), Title
+		CREATE TABLE mediums( Autor VARCHAR(100), Title
     		VARCHAR(100), Standort
     		VARCHAR(100));
 		FLUSH PRIVILEGES;
