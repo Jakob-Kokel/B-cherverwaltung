@@ -27,9 +27,10 @@ Mariadb DB erstellen:
 		CREATE DATABASE <Name>;
 		CREATE USER '<User>'@'localhost' IDENTIFIED BY
     		'<Passwort>';	
-		GRANT ALL PRIVILEGES ON Vocabulary.* TO '<User-Name>'@'localhost';
+		GRANT ALL PRIVILEGES ON <Name>.* TO '<User-Name>'@'localhost';
 		USE <Name>;
-		CREATE TABLE Voc (ger VARCHAR(100), lang2
+		CREATE TABLE mediums (Autor VARCHAR(100), Title
+    		VARCHAR(100), Standort
     		VARCHAR(100));
 		FLUSH PRIVILEGES;
 		EXIT;
